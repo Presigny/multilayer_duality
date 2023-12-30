@@ -27,12 +27,28 @@ The scripts are organized into 3 directories associated to results in the paper:
 ## node_layer_duality
 
 ## duality_real_world_multiplex
+This sections is dedicated to how to download, process and analyze the data that support the results corresponding to *Figure 4a-b, Table S1,Figure S3*
+**Directories**:
+- preprocessing: contains the script to generate the supra-adjacency matrices of the multiplex networks from raw data
+- preprocessing/database: contains the preprocessed multiplexes
+- normalized_distance: contains the normalized distance between multiplexes and rewired version of them.Needed to produce Fiure 4a
+
 
 ### Data
+Details on the data used in [1] can be retrieved in the associated Supplementary material. For simplicity, data are preprocessed already in the repository.
+- Twitter events, PierreAuger, Arxiv, EuAir, Genetic, C.Elegans, FAO trade, HumanMicrobiome: datasets are available [here](https://manliodedomenico.com/data.php)
+- German transport: Refer to [Urban-multiplex-networks repository](https://github.com/KBergermann/Urban-multiplex-networks) to find the methods to generate and download the transport multiplex networks from the GTFS data (ref)
+- Uganda villages: dataset is available [here](https://doi.org/10.17863/CAM.15616) (ref)
 
-### Sripts
+### Scripts
+- preprocessing/pre_processing_de_domenico.py: Generate the supra_adjacency matrices and related multidegree centrality sequences of the considered datasets of this [database](https://manliodedomenico.com/data.php) (see section Data) .Make sure to input the right number of nodes and layers before lauching the script
+- preprocessing/pre_processing_german_transport.py: Generate the supra_adjacency matrices and related multidegree centrality sequences of the dataset available [here](https://github.com/KBergermann/Urban-multiplex-networks).
+- preprocessing/pre_processing_villages.py: Generate the supra_adjacency matrices and related multidegree centrality sequences of the Uganda villages dataset (see section Data) .Make sure to input the right number of nodes and layers before lauching the script
+- SVD.py: uses the data of a multilayer network to produce the singular vectors to project its contribution matrix into a 2D plane **(ref Arenas)**. Make the plot of *Figure 4b* . Adjust c,d to set limits of the x and y axes
+- compute_std_tabS1.py: compute the standard deviation of the node and layer multidegree centeality sequences and store them in a csv file. It allow to produce *Table S1*
+- generate_fitting_random_multidegree.py: generate the multidegree sequences of random multiplex networks with the same density as the input multiplex network. Compute the distance between the expected multidegree centrality sequences of the input multiplex network from the rewiring and the ones of the input multiplex networks. Compute those distances for the generated sequences of random multiplexes. Save in a file the ratio between such distance of the input multiplex network and the average of the distances of the random multiplex networks *i.e.* the normalized distances.
+- plot_dX_dY_rand.py: uses the data from generate_fitting_random_multidegree.py to plot the layer normalized distances in function of the node normalized distances. Cluster the multiplex network according to either Kmeans or agglomerative clustering. Make the elbow test and silhouette score of Kmeans clustering and plot them to obtain *Figure S3*. Plot the silhouette score for agglomerative clustering.
 
-### Manual
 
 ## duality_brain_networks
 
@@ -87,3 +103,10 @@ Step-by-step to reproduce the results of *Figure5a-b-c-d, Figure S4, Table S2, T
 1. Compute and plot the absolute difference between the intralayer, interlayer and replica weights of patients matrices and the supra-adjacency matrix averaged over healthy subjects
   1. check_diff_weights_S4.py: load_path = "preprocessing/database_reduced/%s_sym_individual_matrix_PAT/"%(number_of_layer); load_HC_average = "preprocessing/database_reduced/%s_sym_average_SUJ_matrix/%s_sym_average_SUJ.dat"%(number_of_layer,number_of_layer)
 
+[[1]](#1).
+
+## References
+<a id="1">[1]</a> 
+Dijkstra, E. W. (1968). 
+Go to statement considered harmful. 
+Communications of the ACM, 11(3), 147-148.
