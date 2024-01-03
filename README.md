@@ -26,6 +26,9 @@ The scripts are organized into 3 directories associated to results in the paper:
 
 ## node_layer_duality
 
+This sections is dedicated to how to rewire numerically a multilayer network according to the stochastic rewiring model presented in 1, how to generate random multilayer and multiplex networks, how to process and analyze the data that support the results corresponding to *Figure 2b-c, Figure 3, Figure S1*
+**Directories**:
+
 ## duality_real_world_multiplex
 This sections is dedicated to how to download, process and analyze the data that support the results corresponding to *Figure 4a-b, Table S1,Figure S3*
 **Directories**:
