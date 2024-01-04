@@ -140,3 +140,48 @@ Step-by-step to reproduce the results of *Figure5a-b-c-d, Figure S4, Table S2, T
 Dijkstra, E. W. (1968). 
 Go to statement considered harmful. 
 Communications of the ACM, 11(3), 147-148.
+
+<a id="2">[2]</a> 
+Dijkstra, E. W. (1968). 
+Go to statement considered harmful. 
+Communications of the ACM, 11(3), 147-148.
+
+<a id="3">[3]</a> 
+Omodei E., De Domenico M., Arenas A. (2015). 
+Characterizing interactions in online social networks during exceptional events. 
+Frontiers in Physics, 3
+
+<a id="4">[4]</a> 
+De Domenico, M., Altmann E.G. (2020). 
+Unraveling the Origin of Social Bursts in Collective Attention. Scientific Reports. 
+Scientific Reports, 10(1)
+
+<a id="5">[5]</a> 
+De Domenico M., Lancichinetti A., Arenas A, Rosvall M. (2015).
+Identifying Modular Flows on Multilayer Networks Reveals Highly Overlapping Organization in Interconnected Systems.
+Physical Review X, 5(1)
+
+<a id="6">[6]</a> 
+Cardillo A., Gomez-Gardenes J., Zanin M., Romance M., Papo D., Pozo F., et al. (2013)
+Emergence of network features from multiplexity. 
+Scientific Reports, 3(1)
+
+<a id="7">[7]</a> 
+De Domenico M., Nicosia V., Arenas A., Latora V. (2015)
+Structural reducibility of multilayer networks. 
+Nature Communications, 6(1)
+
+<a id="8">[8]</a> 
+Chen BL, Hall DH, Chklovskii DB. Wiring optimization can relate neuronal structure and function. Proceedings of the National Academy of Sciences. 2006;103(12)
+
+<a id="9">[9]</a> 
+De Domenico M, Porter MA, Arenas A. MuxViz: a tool for multilayer analy- sis and visualization of networks. Journal of Complex Networks. 2015;3(2)
+
+Ding T, Schloss PD. Dynamics and associations of microbial community types across the human body. Nature. 2014;509(7500):357–360
+
+De Domenico M, Biamonte J. Spectral Entropies as Information-Theoretic Tools for Complex Network Comparison. Physical Review X. 2016;6(4)
+
+Bergermann K, Stoll M. Orientations and matrix function-based centralities in multiplex network analysis of urban public transport. Applied Network Science. 2021;6(1):90.
+
+Chami GF, Ahnert SE, Kabatereine NB, Tukahebwa EM. Social network fragmentation and community health. Proceedings of the National Academy of Sciences. 2017;114(36)
+
