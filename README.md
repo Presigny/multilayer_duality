@@ -28,6 +28,33 @@ The scripts are organized into 3 directories associated to results in the paper:
 
 This sections is dedicated to how to rewire numerically a multilayer network according to the stochastic rewiring model presented in 1, how to generate random multilayer and multiplex networks, how to process and analyze the data that support the results corresponding to *Figure 2b-c, Figure 3, Figure S1*
 **Directories**:
+- mock_data: contains the mock_data to use the scripts to generate *Figure 2b-c, Figure 3, Figure S1*
+- mock_data/distance_diagramme: contains the data to generate *Figure 2c*
+- mock_data/full_N_200_M_200: contains the random multilayer networks (number of nodes N=200, number of layers M=200) to generate *Figure 2b*
+- mock_data/mplex_N_200_M_200: contains random multiplex networks (number of nodes N=200, number of layers M=200)
+- mock_data/sparse_rewiring_data: contains the data to generate *Figure S1*
+### Data
+
+### Scripts
+- full_multilayer_fig2b.py: uses the data in mock_data/full_N_200_M_200 to generate the node and layer distances in function of the probability parameters and proportion of rewiring R.
+- analysis_of_rewiring_figS1.py: plot the data contained in mock_data/sparse_rewiring_data to obtain *Figure S1* (comparison between numerical and theoretical distances between expected and initial node/layer multidegree centrality distances
+- distance_diagramme.py: plot the data contained in mock_data/distance_diagramme to obtain *Figure 2c* (theoretical distances in function of the probability parameters p_node and p_layer)
+- full_model_fig2c.py: uses the data in mock_data/full_N_200_M_200 to generate the theoretical node and layer distances in function of the probability parameters (p_node,p_layer) for multilayer networks
+- mplex_model_fig2c.py: uses the data in mock_data/mplex_N_200_M_200 to generate the theoretical node and layer distances in function of the probability parameters (p_node,p_layer) for multiplex networks
+- plotter_d_Y_in_function_of_d_X.py: plot the data generated in full_multilayer_fig2b.py to obtain *Figure 2b* (comparison between numerical and theoretical distances between expected and initial node/layer multidegree centrality distances
+- script_explain_distances_Fig3.m: plot the the distances of random multiplex and random multilayer networks to obtain *Figure 3*
+- sparse_random_generator_git.py: generate random multiplex/multilayer networks (number of nodes/layers and probability parameters can be set)
+- sparse_rewiring.py: rewire numerically a multilayer/multiplex network according to the probability parameters p_node, p_layer, p_tel. Return the rewired supra adjancency matrix and the related node/layer multidegree sequence. Works only for binary networks.
+
+### Manual
+Step-by-step to reproduce the data in mock_data (not mentionned in the Scripts section)
+**mock_data/full_N_200_M_200**
+sparse_random_generator.py: n = 100; N = 200; M = 200;density = 0.005; interlayer = True; multiplex_random = True; multiplex = False;
+path = "mock_data/full_N_200_M_200/mock_random_multilayer_network_"+str(n)
+**mock_data/mplex_N_200_M_200**
+sparse_random_generator.py: n = 100; N = 200; M = 200;density = 0.05; interlayer = False; multiplex_random = False; multiplex = True;path = "mock_data/mplex_N_200_M_200/mock_random_multiplex_network_"+str(n)
+**mock_data/sparse_rewiring_data**
+sparse_rewiring.py: uncomment idx, save_path_original and save_path_DS (line 207-209);uncomment lines 233-238; put idx = 0 when event_proba = [1, 0, 0]; put idx = 64 when event_proba = [0, 1, 0]; put idx = 74 when event_proba = [0, 0, 1]; change R to have a different proportion of rewiring
 
 ## duality_real_world_multiplex
 This sections is dedicated to how to download, process and analyze the data that support the results corresponding to *Figure 4a-b, Table S1,Figure S3*
