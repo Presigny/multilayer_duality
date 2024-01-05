@@ -1,6 +1,6 @@
 # About
 
-This repository is meant to reproduce the results and figures from the
+This repository is meant to reproduce the results and figures from the \
 **Paper:** [1] Topological duality of multilayer networks, C. Presigny,MC. Corsi and F. De Vico Fallani,*arXiv*, 2023, https://arxiv.org/abs/2306.12136
 
 **Version**:
