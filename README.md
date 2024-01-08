@@ -1,13 +1,13 @@
 # About
 
 This repository is meant to reproduce the results and figures from the 
-**Paper:**\ [[1]](#1) Topological duality of multilayer networks, C. Presigny, MC. Corsi and F. De Vico Fallani,*arXiv*, 2023, https://arxiv.org/abs/2306.12136
+**Paper:** \ [[1]](#1) Topological duality of multilayer networks, C. Presigny, MC. Corsi and F. De Vico Fallani,*arXiv*, 2023, https://arxiv.org/abs/2306.12136
 
-**Version**:\
+**Version**:
 - All python codes were tested with Python 3.9.0 or Jupyter 6.2.0 on macOS Monterrey 12.7.1
 - *script_explain_distances_Fig3.m* was tested with MATLAB R2023a on macOS Monterrey 12.7.1
 
-**Requirements:**\
+**Requirements:** \
 Required python packages to excecute the scripts:
 - kneed (tested on version 0.8.3)
 - matplotlib (tested on version 3.5.2)
@@ -18,7 +18,7 @@ Required python packages to excecute the scripts:
 - scikit-learn (tested on version 1.0.1)
 - statsmodels (tested on version 0.13.2)
 
-**Directories:**\
+**Directories:** \
 The scripts are organized into 3 directories associated to results in the paper:
 - node_layer_duality: scripts to reproduce results of *Figure 2b-c,Figure 3, Figure S1* and multilayer stochastic rewiring algorithm
 - duality_real_world_multiplex: scripts to process and analyze the real-world data for results corresponding to *Figure 4a-b, Table S1,Figure S3*
@@ -27,7 +27,7 @@ The scripts are organized into 3 directories associated to results in the paper:
 ## node_layer_duality
 
 This sections is dedicated to how to rewire numerically a multilayer network according to the stochastic rewiring model presented in 1, how to generate random multilayer and multiplex networks, how to process and analyze the data that support the results corresponding to *Figure 2b-c, Figure 3, Figure S1*\
-**Directories**:\
+**Directories**: \
 - mock_data: contains the mock_data to use the scripts to generate *Figure 2b-c, Figure 3, Figure S1*
 - mock_data/distance_diagramme: contains the data to generate *Figure 2c*
 - mock_data/full_N_200_M_200: contains the random multilayer networks (number of nodes N=200, number of layers M=200) to generate *Figure 2b*
