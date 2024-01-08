@@ -1,7 +1,8 @@
 # About
 
 This repository is meant to reproduce the results and figures from the 
-**Paper:** \ [[1]](#1) Topological duality of multilayer networks, C. Presigny, MC. Corsi and F. De Vico Fallani,*arXiv*, 2023, https://arxiv.org/abs/2306.12136
+**paper:**  
+[[1]](#1) Topological duality of multilayer networks, C. Presigny, MC. Corsi and F. De Vico Fallani, *arXiv*, 2023, https://arxiv.org/abs/2306.12136
 
 **Version**:
 - All python codes were tested with Python 3.9.0 or Jupyter 6.2.0 on macOS Monterrey 12.7.1
@@ -27,7 +28,8 @@ The scripts are organized into 3 directories associated to results in the paper:
 ## node_layer_duality
 
 This sections is dedicated to how to rewire numerically a multilayer network according to the stochastic rewiring model presented in 1, how to generate random multilayer and multiplex networks, how to process and analyze the data that support the results corresponding to *Figure 2b-c, Figure 3, Figure S1*\
-**Directories**: \
+\
+**Directories**: 
 - mock_data: contains the mock_data to use the scripts to generate *Figure 2b-c, Figure 3, Figure S1*
 - mock_data/distance_diagramme: contains the data to generate *Figure 2c*
 - mock_data/full_N_200_M_200: contains the random multilayer networks (number of nodes N=200, number of layers M=200) to generate *Figure 2b*
@@ -57,7 +59,7 @@ sparse_rewiring.py: uncomment idx, save_path_original and save_path_DS (line 207
 
 ## duality_real_world_multiplex
 This sections is dedicated to how to download, process and analyze the data that support the results corresponding to *Figure 4a-b, Table S1,Figure S3* \
-**Directories**: \
+**Directories**: 
 - preprocessing: contains the script to generate the supra-adjacency matrices of the multiplex networks from raw data
 - preprocessing/database: contains the preprocessed multiplexes
 - normalized_distance: contains the normalized distance between multiplexes and rewired version of them.Needed to produce Fiure 4a
@@ -92,7 +94,17 @@ This sections is dedicated to how to download, process and analyze the data that
 ### Data
 
 ### Scripts
-
+- preprocessing/average_over_subjects.py: uses the supra-adjacency matrices of subjects to generate the supra-adjacency matrix averaged over the subjects
+- preprocessing/compute_multistrength.py: uses the supra-adjacency matrix to compute the associated node/layer multistrength centrality
+- preprocessing/matrix_symmetrization.py: symmetrize any matrix in the numpy array format
+- preprocessing/reduce_matrix.py: uses supra-adjacency matrix to supress a list of selected layers within it
+- Brain_analysis_5ab.ipynb: reproduce the results shown in *Figure 5a-b* (see Manual)
+- check_diff_weights_S4.py: compute the relative intralayer, interlayer and replica weigths between patients and average healthy subjects to reproduce results of *Figure S4*
+- correlation_mmse_freq.py: compute the Spearman correlation between the layer multistrength of patients and their MMSE score fro each frequency. Reproduce the results shown in *Figure 5d, Table S3*
+- correlation_mmse_ROI.py: compute the Spearman correlation between the node multistrength of patients and their MMSE score for each ROI. Reproduce the results shown in *Table S2*
+- euclidean_distance.py: compute the euclidean distance between a list of node/layer multistrengths and the healthy average node/layer multistrength
+- export_matrix_to_csv.py: export the numpy array supra-adjacency matrices into csv format
+- plotter_distance_func_M_Fig5.py: reproduce the results of *Figure 5c*
 ### Manual
 Step-by-step to reproduce the results of *Figure5a-b-c-d, Figure S4, Table S2, Table S3* \
 **Figure 5c**: 
@@ -128,7 +140,7 @@ Step-by-step to reproduce the results of *Figure5a-b-c-d, Figure S4, Table S2, T
    3. writing_path_FDR = "preprocessing/database/FDR_0.05_ROI_correlation_MMSE.csv": where the correction for multiple comparison is saved
    4. clusters_2;p_values_2: where the cluster and corrected p_values with cluster-based permutation test are stored
 
-**Table S4**:
+**Figure S4**:
 1. Compute and plot the absolute difference between the intralayer, interlayer and replica weights of patients matrices and the supra-adjacency matrix averaged over healthy subjects
   1. check_diff_weights_S4.py: load_path = "preprocessing/database_reduced/%s_sym_individual_matrix_PAT/"%(number_of_layer); load_HC_average = "preprocessing/database_reduced/%s_sym_average_SUJ_matrix/%s_sym_average_SUJ.dat"%(number_of_layer,number_of_layer)
 
