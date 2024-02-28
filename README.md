@@ -65,7 +65,7 @@ This sections is dedicated to how to download, process and analyze the data that
 
 
 ### Data
-Details on the data used in [[1]](#1) can be retrieved in the associated Supplementary material. For simplicity, data are preprocessed already in the repository even if the code to do so is available as well.
+Details on the data used in [[1]](#1) can be retrieved in the associated Supplementary material.
 - Twitter events, PierreAuger, Arxiv, EuAir, Genetic, C.Elegans, FAO trade, HumanMicrobiome: datasets are available [here](https://manliodedomenico.com/data.php) [[3-11]](#3)
 - German transport: Refer to [Urban-multiplex-networks repository](https://github.com/KBergermann/Urban-multiplex-networks) to find the methods to generate and download the transport multiplex networks from the GTFS data [[12]](#12)
 - Uganda villages: dataset is available [here](https://doi.org/10.17863/CAM.15616) [[13]](#13)
