@@ -2,7 +2,7 @@
 
 This repository is meant to reproduce the results and figures from the 
 **paper:**  
-[[1]](#1) C. Presigny, MC. Corsi and F. De Vico Fallani (2023) Topological duality of multilayer networks, *arXiv*, https://arxiv.org/abs/2306.12136
+[[1]](#1) C. Presigny, MC. Corsi and F. De Vico Fallani (2023) Node-layer duality in networked systems, *arXiv*,https://arxiv.org/abs/2306.12136v2
 
 **Version**:
 - All python codes were tested with Python 3.9.0 or Jupyter 6.2.0 on macOS Monterrey 12.7.1
