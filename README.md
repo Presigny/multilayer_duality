@@ -19,6 +19,9 @@ Required python packages to execute the scripts:
 - scikit-learn (tested on version 1.0.1)
 - statsmodels (tested on version 0.13.2)
 
+Required data to execute the scripts:
+- Multilayer brain networks -> https://zenodo.org/doi/10.5281/zenodo.12099872
+
 **Directories:** \
 The scripts are organized into 3 directories associated to results in the paper:
 - node_layer_duality: scripts to reproduce results of *Figure 2b-c,Figure 3, Figure S1* and the multilayer stochastic rewiring algorithm
@@ -90,6 +93,7 @@ This section is dedicated to how to download, process and analyze the data that 
 - metadata: contains metadata necessary for the analysis (distance between brain regions, name of brain regions, cognitive score of patients)
 
 ### Data
+The data to run these scripts can be found in the following repository: Multilayer brain networks -> https://zenodo.org/doi/10.5281/zenodo.12099872
 
 ### Scripts
 - preprocessing/average_over_subjects.py: uses the supra-adjacency matrices of subjects to generate the supra-adjacency matrix averaged over the subjects
