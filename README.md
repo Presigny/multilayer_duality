@@ -2,7 +2,7 @@
 
 This repository is meant to reproduce the results and figures from the 
 **paper:**  
-[[1]](#1) C. Presigny, MC. Corsi and F. De Vico Fallani (2023) Node-layer duality in networked systems, *Nat Commun* **15**,6038 (2024),https://doi.org/10.1038/s41467-024-50176-5
+[[1]](#1) C. Presigny, MC. Corsi and F. De Vico Fallani, Node-layer duality in networked systems, *Nat Commun* **15**,6038 (2024),https://doi.org/10.1038/s41467-024-50176-5
 
 **Version**:
 - All python codes were tested with Python 3.9.0 or Jupyter 6.2.0 on macOS Monterrey 12.7.1
